@@ -4,6 +4,6 @@ from fastapi import FastAPI
 # The variable name must be `app` for Render to automatically detect it.
 app = FastAPI()
 
-@app.get("/")
+@app.post("/endpoint")
 def read_root(Va):
     return {"message": Va * 10}
