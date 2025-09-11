@@ -1,0 +1,9 @@
+from fastapi import FastAPI
+
+# Create the FastAPI application instance.
+# The variable name must be `app` for Render to automatically detect it.
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hi"}
