@@ -5,5 +5,5 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"message": "Hi"}
+def read_root(Va):
+    return {"message": Va * 10}
