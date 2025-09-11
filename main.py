@@ -6,4 +6,4 @@ app = FastAPI()
 
 @app.post("/endpoint")
 def read_root(Va):
-    return {"message": Va * 10}
+    return {"message": Va.data[0] * 10}
